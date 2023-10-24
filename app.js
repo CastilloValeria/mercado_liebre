@@ -3,7 +3,8 @@ const path= require ("path");
 const port =3000;
 const app= express();
 
-app.listen (port,() => console.log(`server running in port http//www.localhost:${port} ` ));
+app.listen(puerto, ()=>console.log(`server running in : http://localhost:${puerto}`));
+
 
 const publicPath= path.join(__dirname, "./public");
 app.use(express.static(publicPath));
