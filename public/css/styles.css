@@ -19,15 +19,20 @@
 }
 .body{
     display:flex;
-    flex-wrap:wrap ;
+    flex-wrap:nowrap ;
     flex-direction:column ;
 }
-.buscador{
+#header_top{
     display: flex;
-    justify-content:flex-start;
+    flex-wrap: nowrap ;
+    justify-content: space-around;
+}
+.buscador_p{
+    width: 50%vw;
+    margin-top: 35px;
 }
 .bar-nav{ 
-    display: inline;
+    display: none;
     color:black;
     font-size: 14px;
     font-weight: bold;
@@ -40,10 +45,11 @@
 #logo img{
     display:flex;
     align-items: left;
-    width:35%;
-    height:30px;
+    width:140px;
+    height: 70px;;
     margin-left:5px;
     margin-top:10px ;
+    width: 50%vw;
 }
 .bar-nav ul {
     text-decoration: none;
@@ -104,29 +110,36 @@ h3{
     background-color: var(--color-Gris-oscuro);
     display: flex;
     flex-direction: column;
+    
 }
 .main-home article{  
     background-color:#ffff;
     margin: 10px;
     padding: 5px 5px;
     left: 0;
-    
+    width: 90%vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 #camion-envio i{
     font-size: 1em;
-    display: inline-block;
+    display: block;
     border: solid 2px var(--color-Verde);
     border-radius: 50%;
     padding-block: 5px;
     background-color: #ebebeb;
- 
+    position: absolute;
+    display: flex;
+    margin: 0px 10px 5px 230px;
 }
 .detalle_articulo{
     background-color:#ffffff ;
-    width: 150px;
+    width: 90%vw;
     display: flex;
     flex-direction: column;
     border-top: 1px solid #ebebeb;
+    margin-top: 5px;
 }
 .articulo-home{
     border:3px solid var(--color-Gris-oscuro);
@@ -134,7 +147,7 @@ h3{
     size:20dvh;
     display: flex;
     flex-wrap: wrap;
-    width: 80%vh;
+    width: 90%vh;
 }
 .articulo-home img{
 align-items: center;
@@ -144,15 +157,17 @@ align-items: center;
     width: 150px; 
     font-size: 16px;
     color:#000000;
-    display: flex;
     align-items: flex-start;
 }
 #descuento{
-    width: 150px;
     font-size: 14px;
     color:var(--color-Verde);
-    display: flex;
     margin: 0px 0px 5px 0p;
+}
+#precio-descuento{
+    margin-top: 35px;
+    display: flex;
+    /* justify-content: space-around; */
 }
 #producto-name{
     font-size:16px ;
@@ -191,12 +206,6 @@ p{
     padding-bottom: 35px;
     margin-left: 20px;
 }
- @media screen and (max-width:360) {
-    .bar-nav ul li a {
-    display: none;
-}
-} 
-
 @media (min-width: 361px) {
 .articulo-home {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -218,6 +227,7 @@ p{
 }    
 .bar-nav ul {
     display: flex;
+    justify-content: space-between;
 }
 .bar-nav li {
     margin: 0 5px;
