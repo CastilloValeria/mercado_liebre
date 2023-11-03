@@ -13,12 +13,10 @@
     max-width: 90%;
     margin: 10px;
 } 
-
 h3{
     font-size: 20px;
     text-align: center;
 } 
-
 .main-home{
     background-color: var(--color-Gris-oscuro);
     display: flex;
@@ -31,12 +29,12 @@ h3{
     padding: 5px 5px;
     left: 0;
     width: 90%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* flex-wrap: nowrap; */
 }
 .visitas-seccion{
-    display: flex;
+    /* display: flex; */
 }
 #camion-envio i{
     font-size: 1em;

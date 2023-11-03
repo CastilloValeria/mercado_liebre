@@ -2,11 +2,22 @@
     display: flex;
     margin-left: 5px;
 }
-.buscador_p i{
+.buscador_Home{
+    display: flex;
+    position: relative;
+}
+.buscador_Home  div input{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 31px;
+}
+.buscador_Home div i{
     width: 50%vw;
     margin-top: 35px;
     margin-left: -22px;
-    color:var(--color-Gris-claro)
+    color:var(--color-Gris-claro);
+    position: absolute;
+    margin-left: 178px;
 }
 .bar-nav-derecha{ 
     display: none;
@@ -52,8 +63,6 @@ a{
 .bar-nav-derecha p{
     text-decoration: none;
     font-size:12px ;
-    text-align:left;
-    font-weight: bold;
     display: inline;
 }
 .bar-nav-izquierda li i{
@@ -78,4 +87,38 @@ a{
     padding: 6px 9px; 
     font-size: 30px;   
     color:white;
+}
+@media (min-width: 768px){
+    #logo img{
+        display:flex;
+        flex-direction: row;
+        width: 150px;
+        height: 70px;
+        font-size: 300%;
+    }
+    .buscador_Home{
+        display: flex;
+        position: relative;
+    }
+    .buscador_Home  div i{
+        position: absolute;
+        margin-left: 174px;
+        
+    }
+    
+    .bar-nav-derecha {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5px;
+        align-items: self-end;
+    }
+    .bar-nav-izquierda {
+        display: flex;
+        /* justify-content:space-between; */
+        margin: 0 5px;
+        align-items: self-end;
+    }
+    .burger-menu {
+        display: none;
+    }
 }
