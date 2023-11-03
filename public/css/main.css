@@ -1,0 +1,99 @@
+.body{
+    display:flex;
+    flex-wrap:nowrap ;
+    flex-direction:column ;
+}
+.banner-home{
+    width:100%;
+    display:block;
+}
+.visitas-seccion{
+    background-color:var(--color-Gris-claro);
+    margin:10px;
+    max-width: 90%;
+    margin: 10px;
+} 
+
+h3{
+    font-size: 20px;
+    text-align: center;
+} 
+
+.main-home{
+    background-color: var(--color-Gris-oscuro);
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-home article{  
+    background-color:#ffff;
+    margin: 10px;
+    padding: 5px 5px;
+    left: 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+}
+.visitas-seccion{
+    display: flex;
+}
+#camion-envio i{
+    font-size: 1em;
+    display: block;
+    border: solid 1px var(--color-Verde);
+    border-radius: 50%;
+    padding-block: 5px;
+    background-color: #ebebeb;
+    position: absolute;
+    right: 5%;
+    top: -20%;
+}
+.detalle_articulo{
+    background-color:#ffffff ;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ebebeb;
+    margin-top: 5px;
+    margin-bottom:10px;
+    position: relative;
+    justify-content: center;
+}
+.articulo-home{
+    border:3px solid var(--color-Gris-oscuro);
+    margin: 10px 10px;
+    size:20%;
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    width: 90%;
+}
+.articulo-home img{
+width: 80%;
+align-self:center ;
+}
+#precio {
+    margin-bottom: 0px;
+    width: 145px;  
+    font-size: 16px;
+    color:#000000;
+    align-items: flex-start;
+}
+#descuento{
+    font-size: 14px;
+    color:var(--color-Verde);
+    margin: 0px 0px 5px 0p;
+}
+#precio-descuento{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+#producto-name{
+    font-size:16px ;
+    width: 150px; 
+    margin-top: 6px;
+    color: var(--color-Gris-oscuro) ;
+}

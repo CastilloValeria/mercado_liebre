@@ -1,13 +1,81 @@
-.body{
-    background-color:var--color-Gris-claro;
+#header_top{
+    display: flex;
+    margin-left: 5px;
 }
-.backgroun-header{
-    background-color: var --color-Amarillo;
+.buscador_p i{
+    width: 50%vw;
+    margin-top: 35px;
+    margin-left: -22px;
+    color:var(--color-Gris-claro)
 }
-#logo{
-    text-align: justify;
-    background-image:src=url("/img/logo-mercado-liebre.svg") ;
+.bar-nav-derecha{ 
+    display: none;
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    align-items:start;
+}
+.background-header{
+    background-color:var(--color-Amarillo);
     width:100%;
-    height:200px
+}
+#logo img{
+    display:flex;
+    width: 135px;
+    height: 70px;
+    font-size: 50%;
+}
+#compras {
+    margin-right:0px ;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+.bar-nav-izquierda {
+    text-decoration: none;
+    text-align: left;
+    display: inline;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000000;
+}
+.bar-nav-derecha li i{
+    text-decoration: none;
+    text-align: left;
+    font-size:12px ;
+    display: inline;
+    color:#000000;
+}
+.bar-nav-derecha p{
+    text-decoration: none;
+    font-size:12px ;
+    text-align:left;
+    font-weight: bold;
+    display: inline;
+}
+.bar-nav-izquierda li i{
+    text-decoration: none;
+    text-align: left;
+    font-size:12px ;
+    color:#000000;
+}
+.bar-nav-izquierda p{
+    text-decoration: none;
+    font-size:12px ;
+    text-align:left;
+    font-weight: bold;
+    display: inline;
 }
 
+.burger-menu {
+    background-color:var(--color-Celeste);
+    border-radius: 10%;
+    display: inline-block;
+    margin-left: 45%;
+    padding: 6px 9px; 
+    font-size: 30px;   
+    color:white;
+}
