@@ -61,8 +61,14 @@
     justify-content: center;
     width: 90%;
 }
-.visitas-seccion i{
+.articulo-home{
+    margin: 10px 10px;
+    size:20%;
     display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    justify-content: center;
+    width: 90%;
 }
 #precio{
     display: flex;
@@ -74,9 +80,15 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 }
-#producto-name{ 
-    font-size: 14px;
+#precio{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
+#descuento {
+    display: flex; 
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 @media (min-width: 1024px) {
