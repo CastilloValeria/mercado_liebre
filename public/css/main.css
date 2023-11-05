@@ -17,13 +17,15 @@ h2{
     display: flex;
     flex-wrap: wrap;
     padding: 16px;
-    gap:10px
+    gap:10px;
+    margin-left: 7%;
 }
 .visitas-seccion-2{
     display: flex;
     flex-wrap: wrap;
     padding: 16px;
-    gap:10px
+    gap:10px;
+    margin-left: 7%;
 }
 #camion-envio i{
     font-size: 1em;
