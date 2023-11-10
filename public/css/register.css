@@ -1,0 +1,38 @@
+.body {
+    background-color: var(--color-Gris-oscuro);
+}
+.main-registre{
+    background-color:rgb(230, 229, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fieldset-registro{
+    width: 100%;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px; 
+}
+h4{
+    font-size: 14px;
+}
+.info-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:white;
+}
+.checkbox_registro { 
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;;
+    
+}
+
+.checkbox_registro imput{
+    font-size: 10px;
+}

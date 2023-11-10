@@ -10,6 +10,9 @@
     margin-left: 0px;
     margin-top: 31px;
 }
+.buscador_Home form{
+    margin-left:0%;
+}
 .buscador_Home div i{
     width: 40%;
     margin-top: 35px;
@@ -103,11 +106,12 @@ a{
     font-size: 350%;
     margin-left: 12px ;
 }
-.buscador_Home input{
+.buscador_Home input {
     position: relative;
     margin-left: 9px;
     margin-bottom: 34px;
 }
+
 .buscador_Home  div i{
     position: absolute;
     margin-left: -19px;
@@ -124,6 +128,7 @@ a{
 .buscador_Home{  
     margin: 3% 10%;
 } 
+
 .bar-nav{
     display: flex;
     justify-content: space-between;
