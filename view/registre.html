@@ -28,90 +28,64 @@
             </div>
             <nav class="bar-nav">
                 <ul class="bar-nar-derecha">
-                    <li><a href>Oferta</a></li>
-                    <li><a href>Tienda Oferta</a></li>
-                    <li><a href>Vender</a></li>
-                    <li><a href>Ayuda</a></li>
+                    <li><a href="">Oferta</a></li>
+                    <li><a href="">Tienda Oferta</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
                 </ul>
                 <ul class="bar-nav-izquierda">
-                    <li><a href>Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
-                    <li><a href>Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
-                    <li><a href>Mis compras<i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="./registre.html">Crea tu cuenta<i class="fa-solid fa-id-card"></i></a></li>
+                    <li><a href="./login.html">Ingresa<i class="fa-solid fa-right-to-bracket"></i></a></li>
+                    <li><a href="">Mis compras<i class="fas fa-shopping-cart"></i></a></li>
                 </ul>
             </nav>
             <div class="burger-menu">
                 <i class="fas fa-bars"></i>
             </div>
         </header>
-        <main class="main-registre">
-            <fieldset  class="fieldset-registro"> 
-            <form action="/registro" method="post">
-                <div class="info-box">
-                    <label for="NombyAp"></label>
-                    <input type="text" placeholder="Nombre y apellido"
-                        name="NombyAp" id="NombyAp" disabled>
-                </div>
-                <div class="info-box">
-                    <label for="nombreU"></label>
-                    <input type="text" placeholder="Nombre de usuario" name="nombreU" id="nombreU" disabled>
-                </div>
-                <div class="info-box">
-                    <label for="email"></label>
-                    <input type="email" placeholder="E-mail"name="email" id="email" disabled>
-                </div>
-                    <h4>Fecha de nacimiento</h4>
-                        <div class="info-box">
-                            <input type="date" name="calendario" value="mm/dd/yyyy">
+        <main class="main-registro">
+            <section class="section-registro">
+            <form class= "form-registro"action="/registro" method="post">
+
+                    <input class="imput-registro" type="text" placeholder="Nombre y apellido" name="NombyAp" id="NombyAp" required>
+                    
+                    <input class="imput-registro" type="text" placeholder="Nombre de usuario" name="nombreU" id="nombreU" required>
+                    
+                    <input class="imput-registro" type="email" placeholder="E-mail"name="email" id="email">
+
+                    <label for="">Fecha de nacimiento</label>
+                    <input  class="imput-registro" type="date" name="calendario" value="mm/dd/yyyy" min="1950-01-01" max="2000-12-31">
+                    
+                    <input class="imput-registro" type="text"placeholder="Domicilio" name="Domicilio" id="Domicilio" required>
+                    
+                    <label for="">Perfil de Usuario</label>
+                        <p><input type="radio" name="datos" value="compra"> Comprador </p>
+                        <p><input type="radio"name="datos" value="venta" > Vendedor </p>
+                    
+                    <label class=".checkbox_registro"for="">Intereses </label>
+                        <p><input type="checkbox" name="Electro">Electro</p>                                     
+                        <p><input type="checkbox" name="Moda">Moda</p>                                      
+                        <p><input type="checkbox" name="Hogar">Hogar</p>
+                        <p><input type="checkbox" name="Jugueteria">Jugueteria</p>
+                        <p><input type="checkbox" name="Vida sana">Vida sana</p>
+
+                    <input class="imput-registro" type="image" name="imagen" id="imagen" accept="jpg">
+                    
+                    <input class="imput-registro" type="password" placeholder="Contraseña"name="password" id="password" required>
+                    
+                    <inpu class="imput-registro" type="password" placeholder="Confimar contraseña" name="Confimar contraseña" id="Confimar" required>
+                                    
+                    </section>
+                            <div class="contenor_botones">
+                                    
+                                <button id="botonB-registro" type="reset">Borrar</button>
+                                    
+                                <button  id="botonEn-registro"type="submit"> <a href="/view/home.html" >Enviar</a></button>
+                        
                             </div>
-                        <div class="info-box">
-                                <label for="Domicilio"></label>
-                                <input type="text"placeholder="Domicilio" name="Domicilio" id="Domicilio" disabled>
-                            </div>
-                    <h4>Perfil de usuario</h4>
-                            <section class="checkbox_registro">
-                                <div class="selecione-checkbox">
-                                <label for><input type="radio"> Comprador</label>
-                                <label for><input type="radio"> Vendedor</label>
-                                </div>
-                    <h4>Intereses</h4>
-                                        <label for>
-                                            <input type="checkbox" name="Electro">
-                                            Electro
-                                        </label>
-                                        <label for>
-                                            <input type="checkbox" name="Moda">
-                                            Moda
-                                        </label>
-                                        <label for>
-                                            <input type="checkbox" name="Hogar">
-                                            Hogar
-                                        </label>
-                                        <label for>
-                                            <input type="checkbox" name="Jugueteria">
-                                            Jugueteria
-                                        </label>
-                                        <label for>
-                                            <input type="checkbox" name="Vida sana">
-                                            Vida sana
-                                        </label>
-                                        <div class="img">
-                                            <input type="image" name="imagen" id="imagen">
-                                        <div class="info-box">
-                                            <label for="pasword"></label>
-                                            <input type="password" placeholder="Contraseña"name="password" id="password" disabled>
-                                        </div>
-                                        <div>
-                                        <label for="Confimar contraseña">
-                                            <inpu type="password" placeholder="Confimar contraseña" name="Confimar contraseña" id="Confimar"disabled>
-                                            </div>
-                                        </label>
-                                    </section>
-                                    <div class="contenor_botones">
-                                        <button type="reset">Borrar</button>
-                                        <button type="submit" href="/view/home.html">Enviar</button>
-                                    </div>
-                                </form>
-                            </fieldset>    
+                        </form>
+                            
+                        </main>   
                             <footer class="footer-home">
                                 <div>
                                 <i class="fa-solid fa-credit-card"></i>
@@ -135,6 +109,5 @@
                             <h5><b>Copyright © 1999-2023 MercadoLiebre S.R.L.</b></h3>
                             </div>
                     </footer>
-            </main>
-    </body>
+        </body>
 </html>

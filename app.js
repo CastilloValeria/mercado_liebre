@@ -16,23 +16,23 @@ app.use (express.static("public"));
 
 app.get("/", (req, res)=>{
     res.sendFile(__dirname+"/view/home.html" );
-})
+});
 app.get("/registro", (req, res)=>{
     res.sendFile(__dirname+"/view/registre.html" );
-})
+});
 
 app.get("/login", (req, res)=>{
     res.sendFile(__dirname+"/view/login.html" );
-})
+});
 
 app.post("/ingresar",( req,res)=>{
     console.log(req.body);
-    res.redired( "/")
-})
-
-
+    res.redirect
+});
 
 app.get("/ingresar", (req, res)=>{
-    res.sendFile(__dirname+"/view/login.html" );
-})
-
+    res.sendFile(__dirname +"/view/login.html" );
+});
+app.get("/Crear cuenta", (req, res)=>{
+    res.sendFile(__dirname+"/view/registre.html" );
+});

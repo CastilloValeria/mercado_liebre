@@ -1,38 +1,43 @@
 .body {
     background-color: var(--color-Gris-oscuro);
 }
-.main-registre{
-    background-color:rgb(230, 229, 229);
+.main-registro{
+    background-color: var(--color-Gris-claro);
+    margin: 7%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
 }
-.fieldset-registro{
+.section-registro{
     width: 100%;
-    padding: 14px;
+    padding: 4px;
     display: flex;
     flex-direction: column;
-    gap: 14px; 
+    gap: 9px;
+    align-items: center;
 }
-h4{
-    font-size: 14px;
-}
-.info-box{
-    width: 100%;
+.form-registro{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color:white;
 }
-.checkbox_registro { 
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    display: flex;
-    flex-direction: column;
-    margin: 10px;;
-    
+.imput-registro{
+margin:5%;
 }
-
 .checkbox_registro imput{
     font-size: 10px;
+}
+p{
+    font-size: 8px;
+}
+.contenedor_botone{
+    display: flex;
+}
+#botoB-reistro{
+    display: flex;
+    align-items: start;
+}
+#botonEn-reistro{
+    display: flex;
+    align-items: end;
 }

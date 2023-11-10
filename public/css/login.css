@@ -1,31 +1,31 @@
 main{
     background-color: var(--color-Gris-claro);
     margin: 7%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .form-login{
     background-color: var(--color-Gris-claro);
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.info-box-login{
-    width: 100%;
-    color:white;
-    outline-color: var(--color-Gris-oscuro);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 7%;
+    width: 96%;
+    gap:15px;
 }
 .enviar-login{
     display: flex;
     justify-content: space-evenly;
 }
-.buton-login{
+.boton-login{
     color: white;
-    width: 57%;
+    width: 49%;
     background-color: var(--color-Celeste);
     border: white;
-    margin-left: -1%;
+    margin-left: 0%;
     margin-bottom: 30%;
+    display: flex;
+    justify-content: center;
+}
+@media  {
+    
 }
