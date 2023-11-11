@@ -24,18 +24,13 @@ app.get("/login", (req, res)=>{
     res.sendFile(__dirname+"/view/login.html" );
 });
 
-app.post("/ingresar",( req,res)=>{
-    console.log(req.body);
-    res.redirect("/login")
-});
-app.post("/registro",( req,res)=>{
+app.post("/login",( req,res)=>{
     console.log(req.body);
     res.redirect("/")
 });
 
-app.get("/ingresar", (req, res)=>{
-    res.sendFile(__dirname +"/view/login.html" );
+app.post("/registro",( req,res)=>{
+    console.log(req.body);
+    res.redirect("/login")
 });
-app.get("/Crear tu cuenta", (req, res)=>{
-    res.sendFile(__dirname+"/view/registro.html")
-});
+
