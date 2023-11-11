@@ -33,11 +33,21 @@ p{
 .contenedor_botone{
     display: flex;
 }
-#botoB-reistro{
+.boton-registro{
     display: flex;
     align-items: start;
 }
-#botonEn-reistro{
+#botonEn-registro{
     display: flex;
     align-items: end;
+}
+@media (min-width: 767px){
+    main{display: flex;
+    justify-content: center;
+    }
+}
+@media (min-width: 1024px){
+    main{display: flex;
+        justify-content: center;
+        }
 }

@@ -2,15 +2,28 @@ main{
     background-color: var(--color-Gris-claro);
     margin: 7%;
     display: flex;
-    justify-content: space-evenly;
-}
+    justify-content: center;
+    }
 .form-login{
     background-color: var(--color-Gris-claro);
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 96%;
     gap:15px;
+}
+label{
+    margin-top: 2%;
+    font-size: 12px;
+    margin-left: 18%;
+    display: flex;
+    align-self: start;
+    
+}
+.input-login{
+    margin-left: 1%;
+    height: 26px
 }
 .enviar-login{
     display: flex;
@@ -26,6 +39,42 @@ main{
     display: flex;
     justify-content: center;
 }
-@media  {
-    
+
+@media (min-width: 767px){
+    main{
+    display: flex;
+    justify-content: center;
+    }
+    .input-login {
+        width: 49%;
+        border-top: 2px solid rgb(31, 30, 30);
+        margin-left: 1%;
+        height: 32px 
+    }
+    label{
+        font-size: 15px;
+        margin:2% 26%;
+        
+    }
+}
+@media (min-width: 1024px){
+    main{display: flex;
+        justify-content: center;
+        }
+    .form-login{
+        gap:19px;
+        outline-color: black;
+        }
+    .boton-login{
+        height: 35px;
+        font-size: 23px;
+    }
+    .input-login{
+        height: 40px;
+        font-size: 20px
+    }
+    label{
+        font-size: 21px;
+        margin: 3% 26%
+    }
 }

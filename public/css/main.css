@@ -11,7 +11,9 @@ h2{
     text-align: left;
 } 
 .main-home{
-    background-color:#ffff;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
 }
 .visitas-seccion{
     display: flex;

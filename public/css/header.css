@@ -30,7 +30,7 @@
     height: 70px;
     font-size: 50%;
 }
-button{
+.button-home{
     margin-left: -6px;
 }
 #compras {
@@ -170,14 +170,17 @@ a{
     margin-bottom: 6%;
     font-size: 147%;
 }
-button{
+.button-home{
     position: absolute;
     margin-left: -3%;
     top: 4.5%;
     width: 3%;
     height: 3.5%;
+    font-size: 22.5px;
     border-bottom: darkgray;
+
 }
+
 #compras{
     margin-bottom: 6%;
     margin-top: -7%;
@@ -185,6 +188,13 @@ button{
     font-size: 15px;
     color: var(--color-Celeste);
     font-weight: bold;
+}
+#compras  p{
+    font-size: 13px;
+}
+
+.bar-nav-izquierda li a i{
+font-size: 17px;;
 }
 .burger-menu {
     display: none;

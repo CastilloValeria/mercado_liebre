@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>mercado liebre</title>
-   <link rel="stylesheet" href="../public/css/styles.css">
+   <link rel="stylesheet" href="/css/styles.css">
    <link rel="shortcut icon" type="icon-caza" href="img\caza.png">
    <script src="https://kit.fontawesome.com/ec7737c18b.js" crossorigin="anonymous"></script>
 </head>
@@ -41,8 +41,10 @@
    </header>
          <main>
             <form class="form-login" action="" method="post">
-               <input type="text" name="Usuario" placeholder="Nombre de usuario" required>
-               <input type="password" name="password" placeholder="contraseña" required>
+               <label for="usuario">Escribe tu usuario</label>
+               <input class="input-login" type="text" name="Usuario"id= "usuario"placeholder="Nombre de usuario" required>
+               <label for="usuario">Escribe tu contraseña</label>
+               <input class="input-login" type="password" name="password" placeholder="contraseña" required>
                <button class="boton-login" type="submit" formaction="home.html">Enviar</button>
             </form>
          </main>
