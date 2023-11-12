@@ -1,4 +1,4 @@
-main{
+.main-login{
     background-color: var(--color-Gris-claro);
     margin: 7%;
     display: flex;
@@ -23,7 +23,8 @@ label{
 }
 .input-login{
     margin-left: 1%;
-    height: 26px
+    height: 26px;
+    text-align: center;
 }
 .enviar-login{
     display: flex;
@@ -31,30 +32,45 @@ label{
 }
 .boton-login{
     color: white;
-    width: 49%;
-    background-color: var(--color-Celeste);
-    border: white;
+    width: 65%;
+    height: 24px;
+    font-size: 16px;
+    background-color: rgb(4 4 68);
     margin-left: 0%;
     margin-bottom: 30%;
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 @media (min-width: 767px){
-    main{
+    .main-login{
     display: flex;
     justify-content: center;
     }
+    .form-login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        background-color: rgb(214 199 199);
+    }
+    
     .input-login {
         width: 49%;
         border-top: 2px solid rgb(31, 30, 30);
         margin-left: 1%;
-        height: 32px 
+        height: 33px;
+        text-align: center
     }
     label{
         font-size: 15px;
         margin:2% 26%;
         
+    }
+    .boton-login{
+        height: 29px;
+        margin: 5% -1% 5% 0%;
+        font-size: 20px
     }
 }
 @media (min-width: 1024px){
@@ -66,14 +82,18 @@ label{
         outline-color: black;
         }
     .boton-login{
-        height: 35px;
+        height: 37px;
         font-size: 23px;
+        width: 50%;
+        margin-left: 3px;
+
     }
     .input-login{
-        height: 40px;
-        font-size: 20px
+        height: 42px;
+        font-size: 23px;
+        text-align: center;
     }
-    label{
+    #label-login{
         font-size: 21px;
         margin: 3% 26%
     }

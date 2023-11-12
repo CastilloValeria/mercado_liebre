@@ -12,14 +12,13 @@
     <body class="body">
         <header class="background-header">
             <section id="header_top">
-                <div id="logo"><a href="/"><img src=/img/logo-mercado-liebre.svg></a>
-                        alt="mi logo">
+                <div id="logo"><a href="/"><img src=/img/logo-mercado-liebre.svg alt="mi logo"></a>                       
                 </div>
                 <div class="buscador_Home"><div action class="buscador"></div>
                     <form id="buscador"><input type="text"
                             placeholder="Buscar producto,marca"
                             id="search">
-                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="boton-home"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
             </section>
@@ -70,20 +69,20 @@
                         required>
 
                     <label for>Perfil de Usuario</label>
-                    <p><input type="radio" name="datos" value="compra">
+                    <p id="registro-textos"><input type="radio" name="datos" value="compra">
                         Comprador </p>
-                    <p><input type="radio" name="datos" value="venta"> Vendedor
+                    <p id="registro-textos"><input type="radio" name="datos" value="venta"> Vendedor
                     </p>
 
                     <label class=".checkbox_registro" for>Intereses </label>
-                    <p><input type="checkbox" name="Electro">Electro</p>
-                    <p><input type="checkbox" name="Moda">Moda</p>
-                    <p><input type="checkbox" name="Hogar">Hogar</p>
-                    <p><input type="checkbox" name="Jugueteria">Jugueteria</p>
-                    <p><input type="checkbox" name="Vida sana">Vida sana</p>
+                    <p id="registro-textos"><input type="checkbox" name="Electro">Electro</p>
+                    <p id="registro-textos"><input type="checkbox" name="Moda">Moda</p>
+                    <p id="registro-textos"><input type="checkbox" name="Hogar">Hogar</p>
+                    <p id="registro-textos"><input type="checkbox" name="Jugueteria">Jugueteria</p>
+                    <p id="registro-textos"><input type="checkbox" name="Vida sana">Vida sana</p>
 
-                    <input class="imput-registro" type="image" name="imagen"
-                        id="imagen" accept="jpg">
+                    <input class="imput-registro" type="file" name="imagen"
+                        id="imagenPerfil" accept="imgen/*">
 
                     <input class="imput-registro" type="password"
                         placeholder="Contraseña" name="password" id="password"
@@ -93,7 +92,7 @@
                         placeholder="Confimar contraseña"
                         name="Confimar contraseña" id="Confimar" required>
 
-                        <div class="contenor_botones">
+                        <div class="contenedor-botones-registro">
 
                             <button id="botonB-registro" type="reset">Borrar</button>
 
