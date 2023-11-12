@@ -10,6 +10,9 @@
     margin-left: 0px;
     margin-top: 31px;
 }
+.buscador_Home form{
+    margin-left:0%;
+}
 .buscador_Home div i{
     width: 40%;
     margin-top: 35px;
@@ -27,8 +30,8 @@
     height: 70px;
     font-size: 50%;
 }
-button{
-    margin-left: -6px;
+.boton-home{
+    margin-left: -4%;
 }
 #compras {
     margin-right:0px ;
@@ -87,7 +90,7 @@ a{
     display: inline-block;
     margin-left: 45%;
     padding: 6px 9px; 
-    font-size: 30px;   
+    font-size: 10px;   
     color:white;
 }
 @media (min-width: 767px){
@@ -103,15 +106,25 @@ a{
     font-size: 350%;
     margin-left: 12px ;
 }
-.buscador_Home input{
+.buscador_Home input {
     position: relative;
     margin-left: 9px;
     margin-bottom: 34px;
 }
+
 .buscador_Home  div i{
     position: absolute;
     margin-left: -19px;
     margin-top: 33px;
+}
+.boton-home{
+    position: absolute;
+    margin-left: -3%;
+    top: 4.5%;
+    width: 3%;
+    height: 3%;
+    font-size: 13.5px;
+    border-bottom: darkgray;
 }
 #compras{
     margin-bottom: 43px;
@@ -124,6 +137,7 @@ a{
 .buscador_Home{  
     margin: 3% 10%;
 } 
+
 .bar-nav{
     display: flex;
     justify-content: space-between;
@@ -165,14 +179,16 @@ a{
     margin-bottom: 6%;
     font-size: 147%;
 }
-button{
+.boton-home{
     position: absolute;
     margin-left: -3%;
     top: 4.5%;
     width: 3%;
     height: 3.5%;
+    font-size: 22.5px;
     border-bottom: darkgray;
 }
+
 #compras{
     margin-bottom: 6%;
     margin-top: -7%;
@@ -180,6 +196,13 @@ button{
     font-size: 15px;
     color: var(--color-Celeste);
     font-weight: bold;
+}
+#compras  p{
+    font-size: 13px;
+}
+
+.bar-nav-izquierda li a i{
+font-size: 17px;;
 }
 .burger-menu {
     display: none;

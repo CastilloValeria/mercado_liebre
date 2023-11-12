@@ -1,0 +1,82 @@
+.body {
+    background-color: var(--color-Gris-oscuro);
+}
+.main-registro{
+    background-color: var(--color-Gris-claro);
+    margin: 7%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.section-registro{
+    display: flex;
+    flex-direction: column;
+}
+.form-registro{
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: center;
+    
+}
+.imput-registro{
+margin:5%;
+}
+.checkbox_registro imput{
+    font-size: 10px;
+}
+#registro-textos{
+    font-size: 8px;
+}
+.contenedor-botones-registro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+@media (min-width: 768px){
+    .main-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .form-registro{
+    width: 122%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    background-color: rgb(214 199 199);
+    margin-left: -16%
+    }
+    .imput-registro{
+        height: 20px;
+    }
+    .contenedor-botones-registro{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+        
+    }
+}
+@media (min-width: 1024px){
+    .main-registro{
+        display: flex;
+        justify-content: center;
+        }
+    .form-registro{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        background-color: rgb(214 199 199);
+        }
+    .imput-registro{
+        height: 38px;
+    }
+    .contenedor-botones-registro{
+        gap:25px;
+    }
+}
