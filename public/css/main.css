@@ -1,11 +1,10 @@
 .body{
- background-color: #ebebeb;
+    background-color: #ebebeb;
 }
 .banner-home{
     width:100vw;
     display:block;
 }
-
 h2{
     font-size: 20px;
     text-align: left;
@@ -55,12 +54,12 @@ h2{
     background-color:#ffffff;
     position: relative;
     width: 250px;
-    justify-content: center
+    justify-content: center;
+    cursor: pointer;
 }
 .articulo-home img{
 width: 80%;
 align-self:center ;
-
 }
 #precio {
     margin-bottom: 0px;
@@ -85,6 +84,14 @@ align-self:center ;
     margin-top: 6px;
     color: var(--color-Gris-oscuro) ;
 }
+/* transition */
+.articulo-home:hover{
+    box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.322);
+}
+#camion-envio i:hover{
+    transform:rotate(-90deg);
+}
+
 @media(min-width:768px){
 .main-home {
     display: flex;
@@ -93,26 +100,52 @@ align-self:center ;
 .articulo-home {
     gap: 10px;
 }
+h2{
+    margin-left: 17%
+}
 .visitas-seccion{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    display: flex;
-    justify-content: space-evenly;
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+    width: 75%;
+    justify-content: center;
+    margin-left: 17%;
+    align-content: flex-start
 }
 .visitas-seccion-2{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    display: flex;
-    justify-content: space-evenly;   
+    /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+    width: 75%;
+    justify-content: center;
+    margin-left: 17%;
+    align-content: flex-start
 }
 }
 @media (min-width: 1024px){
 .main-home{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
+
 .articulo-home{
     outline: 2px solid var(--color-Gris-oscuro);
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 23%;      
 }
+#precio{
+    margin-left: 7%;
+}
+#producto-name{
+    margin-left: 5%;
+   opacity: 0;
+}
+#producto-name:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+.visitas-seccion{
+    flex-wrap: nowrap;
+}
+.visitas-seccion-2{
+    flex-wrap: nowrap;
+}
+
 }

@@ -4,13 +4,15 @@
     margin: 10px;
     margin: 10px;
 }
-.footer-home div{
+.div-section-footer{
     align-items: center;
     justify-content: center;
     padding: 5% 0%;
     margin: 10%;
     text-align: center;
     color:var(--color-Gris-oscuro);
+    font-size: 15px;
+    width: 199px;
 }
 .footer-home p{
     margin-bottom: 2px;
@@ -30,11 +32,30 @@
     padding-bottom: 35px;
     margin-left: 20px;
 }
+.footer-home div i :hover{
+    color: darkgoldenrod ;
+}
+
 @media(min-width:768px){
+    .footer-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .datos-footer{
+        width: 100%;
+        display: flex;
+    }
+    .h4{
+        font-size: 15px;
+        font-weight: bold;
+    }
     .footer-home p{
         margin-bottom: 2px;
-        font-size: 20px;
+        font-size: 12px;
     }
+
     .footer-home i{
         padding-bottom: 5%;
         height: 20%;
@@ -43,11 +64,29 @@
         font-size: 30px;
         color:var(--color-Celeste)
     }
+    div #copyright {
+        width: 50%;
+    }
+    
 }
+
 @media (min-width: 1024px){
+    .footer-home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .datos-footer{
+        width: 100%;
+        display: flex;
+    }
+    h4{
+        font-size: 15px;
+    }
     .footer-home p{
         margin-bottom: 2px;
-        font-size: 27px;
+        font-size: 12px;
     }
     .footer-home i{
         padding-bottom: 5%;
@@ -57,7 +96,11 @@
         font-size: 2em;
         color:var(--color-Celeste)
     }
-    .footer-home{
-        width: 95%;
+    div #copyright {
+        width: 50%;
+    }
+    .div-section-footer i:hover{
+        color: darkgoldenrod;
+        transition:color 2s;
     }
 }

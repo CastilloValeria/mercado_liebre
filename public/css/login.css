@@ -32,16 +32,19 @@ label{
 }
 .boton-login{
     color: white;
-    width: 65%;
+    width: 50%;
     height: 24px;
     font-size: 16px;
     background-color: rgb(4 4 68);
     margin-left: 0%;
     margin-bottom: 30%;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
-
+.boton-login:hover{
+ background-color: darkgoldenrod;
+ transition:backgraund-color 2s;
+}
 @media (min-width: 767px){
     .main-login{
     display: flex;
