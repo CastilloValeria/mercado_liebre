@@ -37,7 +37,17 @@ margin:5%;
     justify-content: center;
     gap: 10px;
 }
-
+#botonB-registro{
+    background-color: var(--color-Gris-claro);
+    font-size: 12px;
+    color: white;
+    border-color: rgb(214 199 199)
+}
+#botonEn-registro{
+    background-color: var(--color-Azul);
+    font-size: 12px;
+    color: white;
+}
 
 @media (min-width: 768px){
     .main-registro{
@@ -60,14 +70,19 @@ margin:5%;
     display: flex;
     justify-content: center;
     gap: 16px;
-        
+    }
+    #botonB-registro{
+    font-size: 18px;
     }
     #botonEn-registro{
-        background-color: var(--color-Azul);
+        font-size: 18px;
     }
     #botonEn-registro:hover{
-        background-color: var(--color-Celeste);
+        background-color:#0022AA;
+        font-size: 18px;
+        color: white;
     }
+
 }
 @media (min-width: 1024px){
     .main-registro{
@@ -86,4 +101,10 @@ margin:5%;
     .contenedor-botones-registro{
         gap:25px;
     }
+    #botonB-registro{
+        font-size: 22px;
+        }
+        #botonEn-registro{
+            font-size: 22px;
+        }
 }

@@ -18,13 +18,15 @@ h2{
     display: flex;
     flex-wrap: wrap;
     padding: 16px;
-    gap:10px
+    gap:10px;
+    margin-left: 5%;
 }
 .visitas-seccion-2{
     display: flex;
     flex-wrap: wrap;
     padding: 16px;
-    gap:10px
+    gap:10px;
+    margin-left: 5%;
 }
 #camion-envio i{
     font-size: 1em;
@@ -90,6 +92,7 @@ align-self:center ;
 }
 #camion-envio i:hover{
     transform:rotate(-90deg);
+    transition: 1s;
 }
 
 @media(min-width:768px){
@@ -98,7 +101,8 @@ align-self:center ;
     flex-wrap: wrap;
 }
 .articulo-home {
-    gap: 10px;
+    margin-left: 3%;
+    margin-bottom: 3%
 }
 h2{
     margin-left: 17%
@@ -107,14 +111,14 @@ h2{
     /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     width: 75%;
     justify-content: center;
-    margin-left: 17%;
+    margin-left: 14%;
     align-content: flex-start
 }
 .visitas-seccion-2{
     /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
     width: 75%;
     justify-content: center;
-    margin-left: 17%;
+    margin-left: 14%;
     align-content: flex-start
 }
 }
@@ -124,10 +128,13 @@ h2{
     flex-direction: column;
 }
 
+
 .articulo-home{
     outline: 2px solid var(--color-Gris-oscuro);
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    width: 23%;      
+    width: 25%;
+    margin-left: 1%;
+    margin-bottom: 3%;    
 }
 #precio{
     margin-left: 7%;
@@ -143,9 +150,11 @@ h2{
 
 .visitas-seccion{
     flex-wrap: nowrap;
+    margin-left: 12%
 }
 .visitas-seccion-2{
     flex-wrap: nowrap;
+    margin-left: 12%
 }
 
 }

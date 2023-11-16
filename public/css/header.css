@@ -31,6 +31,8 @@
     font-size: 50%;
 }
 .boton-home{
+    background-color: #ffffff;
+    position: absolute;
     margin-left: -4%;
 }
 #compras {
@@ -99,45 +101,34 @@ a{
     justify-content: space-around;
 }
 #logo img{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    width: 155px;
-    height: 75px;
-    font-size: 350%;
-    margin-left: 12px ;
+    width: 160px;
+    height: 79px;
+    margin-left: 19px;
 }
-.buscador_Home input {
-    position: relative;
-    margin-left: 9px;
-    margin-bottom: 34px;
-}
-
-.buscador_Home  div i{
-    position: absolute;
-    margin-left: -19px;
-    margin-top: 33px;
-}
-.boton-home{
-    position: absolute;
-    margin-left: -3%;
-    top: 4.5%;
-    width: 3%;
-    height: 3%;
-    font-size: 13.5px;
-    border-bottom: darkgray;
+.buscador_Home form{
+    margin-left: 28%;
 }
 #compras{
-    margin-bottom: 43px;
-    margin-top: -72px;
+    margin-bottom: 45px;
+    margin-top: -57px;
     margin-right: 14px;
     display: flex;
     justify-content: flex-end;
     font-size: 14px;
+    color: var(--color-Celeste);
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
 } 
 .buscador_Home{  
     margin: 3% 10%;
 } 
-
+.boton-home{
+    margin-left: 20.5%;
+    margin-top: -18px;
+}
 .bar-nav{
     display: flex;
     justify-content: space-between;
@@ -161,6 +152,8 @@ a{
     display: none;
 }
 }
+
+
 @media (min-width: 1024px){
 .header_top{
     display: flex;
@@ -168,27 +161,22 @@ a{
     justify-content: center;
 }
 #logo img{
-    width: 105%;
+    width: 90%;
     height: 43%;
     font-size: 350%;
     margin-left: 16%;
 }
-.buscador_Home input{
-    position: relative;
-    margin-left: -6%;
-    margin-bottom: 6%;
-    font-size: 147%;
+.buscador_Home form{
+    margin-left: 1%;
+}
+#search{
+    font-size: 17px;
 }
 .boton-home{
-    position: absolute;
-    margin-left: -3%;
-    top: 5%;
-    width: 3%;
-    height: 3.5%;
-    font-size: 22.5px;
-    border-bottom: darkgray;
+    font-size: 18px;
+    margin-left: 20%;
+    margin-top: -2.5%;
 }
-
 #compras{
     margin-bottom: 6%;
     margin-top: -7%;
@@ -198,11 +186,14 @@ a{
     font-weight: bold;
 }
 #compras  p{
-    font-size: 13px;
+    font-size: 16px;
+    margin-top: 2%
 }
-
-.bar-nav-izquierda li a i{
-font-size: 17px;;
+#compras i{
+    margin-top: 1%
+}
+.bar-nav-izquierda li i{
+    font-size: 16px;
 }
 .burger-menu {
     display: none;
@@ -212,3 +203,4 @@ font-size: 17px;;
     font-weight: bold;
 }
 }
+

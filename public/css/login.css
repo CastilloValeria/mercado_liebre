@@ -42,7 +42,7 @@ label{
     justify-content: center;
 }
 .boton-login:hover{
- background-color: darkgoldenrod;
+ background-color: #0022AA;
  transition:backgraund-color 2s;
 }
 @media (min-width: 767px){
